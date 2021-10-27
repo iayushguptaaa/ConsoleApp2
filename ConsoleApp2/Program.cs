@@ -1,8 +1,11 @@
 ﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+usingusing System.Threading;
+ System.Text;
+using SysteThre
+   asks;
 
 namespace ConsoleApp2
 {
@@ -60,6 +63,17 @@ namespace ConsoleApp2
     interface EmpRole
     {
 
+
+        public class messageBase
+        {
+
+            public void OnVideoEncoded(object source, EventArgs args)
+            {
+                Console.WriteLine("Sending a Text Message... ");
+                Thread.Sleep(3000);
+                Console.WriteLine("***DONE***");
+            }
+        }
         void EmployeeTypeDetails();
     }
 
